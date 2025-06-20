@@ -1,0 +1,26 @@
+Big O Notation
+-> Big O notation describes the upper bound of an algorithm’s running time as the input size grows. It abstracts away constants and lower-order terms to focus purely on the scalability and efficiency of the algorithm.
+
+->Big O helps in comparing algorithms irrespective of hardware, implementation, or language.
+
+
+Best, Average and Worst case scenarios for search operation
+-> Linear search
+--> Best Case :- O(1) (First element match)
+--> Average Case :- O(n)  (Element in middle)
+--> Worst Case :- O(n)  (Last element / not found)
+
+-> Binary search
+--> Best Case :- O(1) (Middle element match)
+--> Average Case :- O(log n)  (Varies)
+--> Worst Case :- O(log n)  (Not found)
+
+Analysis
+Feature	          |  Linear Search	          |   Binary Search
+----------------------------------------------------------------------
+Time Complexity   |	O(n)	                  |  O(log n)
+Requires Sorted?  | No	                      |  Yes
+Ease of Use       | Very simple	              |  Slightly more complex
+Best for	      | Small or unsorted arrays  |  Large sorted datasets
+======================================================================
+
