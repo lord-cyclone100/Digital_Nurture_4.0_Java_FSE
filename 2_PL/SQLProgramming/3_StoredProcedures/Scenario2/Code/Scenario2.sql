@@ -1,12 +1,13 @@
-declare
-  cursor vip is
-    select * from customers_vip;
+create or replace procedure UpdateEmployeeBonus (
+    p_dept_id       in number,
+    p_bonus_percent in number
+)is
 begin
-  for cust in vip loop
-    if cust.balance > 10000 then
-      update customers_vip set is_vip = 'true' where customer_id = cust.customer_id;
-      dbms_output.put_line(cust.name || ' is promoted to ' || 'VIP');
-    end if;
-  end loop;
-  commit; 
+  update EMPLOYEES
+  set salary = salary + (salary * p_bonus_percent / 100)
+  where department_id = p_dept_id;
+
+  dbms_output.put_line('Bonus of ' || p_bonus_percent || '% applied to department ' || p_dept_id);
+
+  commit;
 end;
