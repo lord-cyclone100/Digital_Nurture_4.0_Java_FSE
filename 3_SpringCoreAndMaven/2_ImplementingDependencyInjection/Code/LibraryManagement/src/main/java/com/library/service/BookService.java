@@ -4,7 +4,8 @@ import com.library.repository.BookRepository;
 public class BookService {
     private BookRepository bookRepo;
 
-    public void setInternalRepository(BookRepository bookRepo){
+    //    Setter for DI
+    public void setBookRepository(BookRepository bookRepo){
         this.bookRepo = bookRepo;
     }
     public void printBookTitle(){
