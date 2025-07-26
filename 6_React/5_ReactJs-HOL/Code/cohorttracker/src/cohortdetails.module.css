@@ -1,0 +1,19 @@
+.box{
+  /* Width = 300px;
+Display = inline block;
+Overall 10px margin
+Top and bottom padding as 10px
+Left and right padding as 20px
+1 px border in black color
+A border radius of 10px */
+  width: 300px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+dt{
+  font-weight: 500;
+}
